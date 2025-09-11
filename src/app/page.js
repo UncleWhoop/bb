@@ -568,8 +568,8 @@ export default function Home() {
                 </div>
                 <p className="font-inter mt-3 max-w-[290px] text-sm leading-5 text-gray-200">
                   Our modular approach to token launches gives projects the
-                  flexibility to choose what fits best, whether it's a liquidity
-                  pool (LP) launch or another custom path. Eclipse Fi provides
+                  flexibility to choose what fits best, whether its a liquidity
+                  pool launch or another custom path. Eclipse Fi provides
                   the tools to ensure a successful, long-term launch that aligns
                   with both project and community outcomes.
                 </p>
@@ -597,8 +597,8 @@ export default function Home() {
                 </div>
                 <p className="font-inter mt-3 max-w-[290px] text-sm leading-5 text-gray-200">
                   Our modular approach to token launches gives projects the
-                  flexibility to choose what fits best, whether it's a liquidity
-                  pool (LP) launch or another custom path. Eclipse Fi provides
+                  flexibility to choose what fits best, whether its a liquidity
+                  pool launch or another custom path. Eclipse Fi provides
                   the tools to ensure a successful, long-term launch that aligns
                   with both project and community outcomes.
                 </p>
@@ -626,8 +626,8 @@ export default function Home() {
                 </div>
                 <p className="font-inter mt-3 max-w-[290px] text-sm leading-5 text-gray-200">
                   Our modular approach to token launches gives projects the
-                  flexibility to choose what fits best, whether it's a liquidity
-                  pool (LP) launch or another custom path. Eclipse Fi provides
+                  flexibility to choose what fits best, whether its a liquidity
+                  pool launch or another custom path. Eclipse Fi provides
                   the tools to ensure a successful, long-term launch that aligns
                   with both project and community outcomes.
                 </p>
@@ -655,8 +655,8 @@ export default function Home() {
                 </div>
                 <p className="font-inter mt-3 max-w-[290px] text-sm leading-5 text-gray-200">
                   Our modular approach to token launches gives projects the
-                  flexibility to choose what fits best, whether it's a liquidity
-                  pool (LP) launch or another custom path. Eclipse Fi provides
+                  flexibility to choose what fits best, whether its a liquidity
+                  pool launch or another custom path. Eclipse Fi provides
                   the tools to ensure a successful, long-term launch that aligns
                   with both project and community outcomes.
                 </p>
@@ -870,7 +870,7 @@ export default function Home() {
             <form className="flex h-full flex-col items-center justify-center">
               <div>
                 <div className="mx-auto mb-2 text-center text-base font-bold leading-[18px] text-gray-100 md:mb-3 md:max-w-[700px] md:text-[36px] md:leading-[42px]">
-                  Don't miss out on the next great innovations launching on
+                  Dont miss out on the next great innovations launching on
                   Eclipse FI
                 </div>
                 <div className="mx-auto mb-5 max-w-[505px] text-center font-inter text-p12 leading-[14px] text-gray-200 md:mb-10 md:text-[18px] md:leading-8">
