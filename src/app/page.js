@@ -63,7 +63,7 @@ export default function Home() {
                   paramount for the next wave of adoption. Eclipse Fi is working
                   with partners to radically transform the cross-chain user
                   experience, leveraging account abstraction to create an
-                  intuitive "onboard your grandma" level experience.
+                  intuitive &quot;onboard your grandma&quot; level experience.
                 </p>
                 <p className="font-inter pr-3 text-[12px] leading-[18px] text-gray-200 md:text-[18px] md:leading-[26px] mt-[8px] md:mt-6">
                   Eclipse Fi is committed to deep ecosystem building and has
