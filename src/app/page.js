@@ -5,7 +5,6 @@ import Image from "next/image";
 import ScrollingLogos from "./components/ScrollingLogos";
 import FeaturesSection from "./components/FeatureSection";
 import HeroSection from "./components/HeroSection";
-import FloatingCircle from "./components/FloadingCircle";
 import ProjectsSection from "./components/ProjectsSection";
 import FeaturesTwoSection from "./components/FeatureTwoSection";
 import Navbar from "./components/NavBar";
