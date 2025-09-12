@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 import ScrollingLogos from "./components/ScrollingLogos";
 import FeaturesSection from "./components/FeatureSection";
@@ -9,104 +8,21 @@ import HeroSection from "./components/HeroSection";
 import FloatingCircle from "./components/FloadingCircle";
 import ProjectsSection from "./components/ProjectsSection";
 import FeaturesTwoSection from "./components/FeatureTwoSection";
+import Navbar from "./components/NavBar";
+import CTAsection from "./components/CallToAction";
 
 export default function Home() {
   return (
     <div className="font-sans flex flex-col min-h-screen w-full bg-[#060923]">
-      <nav className="z-10 w-full h-[150px] bg-gradient-to-b from-[#0E0928] to-trans-dark-100 px-4">
-        <div className="container mx-auto flex items-center justify-between pt-[25px]">
-          {/* Left: Logo + members */}
-          <div className="flex items-center">
-            <Link href="/" title="Click to go home">
-              LOGO
-            </Link>
-
-            <div className="mx-3 h-7 w-[1px] bg-[#443873]" />
-
-            <div className="flex cursor-pointer items-center gap-2 rounded-full bg-[#191644] px-2 py-2">
-              <div className="flex items-center gap-1.5">
-                {/* Avatars 1–4 with their SVGs */}
-                <div className="h-6 w-6 rounded-full bg-blue-500">
-                  {/* SVG */}
-                </div>
-                <div className="-ml-4 h-6 w-6 rounded-full bg-gray-400">
-                  {/* SVG */}
-                </div>
-                <div className="-ml-4 h-6 w-6 rounded-full bg-yellow-500">
-                  {/* SVG */}
-                </div>
-                <div className="-ml-4 h-6 w-6 rounded-full bg-green-500">
-                  {/* SVG */}
-                </div>
-              </div>
-              <div className="pr-2 font-inter text-sm text-[#FBF8FA]">
-                300k+ members
-              </div>
-            </div>
-          </div>
-
-          {/* Center: Navigation links */}
-          <div className="flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-sm font-medium text-gray-300 hover:text-gray-100"
-            >
-              Home
-            </Link>
-            <Link
-              href="/dashboard"
-              className="text-sm font-medium text-gray-300 hover:text-gray-100"
-            >
-              Dashboard
-            </Link>
-            <Link
-              href="/launchpad"
-              className="text-sm font-medium text-gray-300 hover:text-gray-100"
-            >
-              Launchpad
-            </Link>
-            <Link
-              href="/stake"
-              className="text-sm font-medium text-gray-300 hover:text-gray-100"
-            >
-              Stake
-            </Link>
-            <a
-              href="https://equinox.eclipsefi.io/"
-              className="text-sm font-medium text-gray-300 hover:text-gray-100"
-            >
-              Equinox
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://airtable.com/appocm8m9oZWPJv0t/pagBaVi0C6GsDZ6o5/form"
-              className="flex items-center gap-1 bg-gradient-to-r from-[#846BEA] to-[#5882DA] bg-clip-text text-sm font-semibold text-transparent"
-            >
-              Apply For IDO
-              {/* optional arrow svg */}
-            </a>
-          </div>
-
-          {/* Right: Launch button */}
-          <button
-            type="button"
-            className="relative inline-flex w-28 items-center justify-center rounded-xl bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 p-[2px] cursor-pointer"
-          >
-            <span className="w-full bg-[#060923] h-full rounded-xl  text-sm font-bold leading-[16px] text-gray-100 py-3 flex items-center justify-center">
-              Launch App
-            </span>
-          </button>
-        </div>
-      </nav>
+      <Navbar></Navbar>
 
       <main className="flex flex-col items-center">
         <HeroSection></HeroSection>
         <FeaturesSection></FeaturesSection>
         <ProjectsSection></ProjectsSection>
 
+        {/* Judantis section - neliesk, gali suluzt */}
         <section className="relative w-full overflow-hidden bg-[url('/images/svg-innovation-bg.svg')] bg-cover bg-center bg-no-repeat">
-
           <style jsx>{`
             @keyframes float {
               0%,
@@ -124,32 +40,32 @@ export default function Home() {
           `}</style>
 
           <div className="pb-[80px] pl-[20%] pt-[190px] md:py-[450px] md:pl-[40%]">
-            <div className="md:w-[550px]">
+            <div className="w-[330px] md:w-[550px]">
               <div className="animate-normal">
-                <h3 className="text-[22px] font-medium leading-[31px] text-gray-100 md:text-[34px] md:leading-[58px]">
+                <h3 className="text-[24px] font-medium leading-[24px] text-gray-100 md:text-[34px] md:leading-[58px]">
                   Fostering innovation across
                 </h3>
-                <h2 className="mb-[9px] text-[32px] font-bold leading-10 text-gray-100 md:mb-[26px] md:text-[72px] md:leading-[76px]">
+                <h2 className="mb-[6px] text-[26px] font-bold leading-[28px] text-gray-100 md:mb-[26px] md:text-[72px] md:leading-[76px]">
                   <div className="bg-[linear-gradient(to_right,#930606_-5.86%,#b18779_20.49%,#906bf5_46.84%,#da8461_73.19%,#c34ddc_99.55%)] bg-clip-text text-transparent inline">
                     Cosmos
                   </div>
                   <span> and</span>
-                  <br />
-                  <div className="bg-[linear-gradient(to_right,#930606_-5.86%,#b18779_20.49%,#906bf5_46.84%,#da8461_73.19%,#c34ddc_99.55%)] bg-clip-text text-transparent inline">
+                  <br className="hidden md:block" />
+                  <div className="pl-2 md:pl-0 bg-[linear-gradient(to_right,#930606_-5.86%,#b18779_20.49%,#906bf5_46.84%,#da8461_73.19%,#c34ddc_99.55%)] bg-clip-text text-transparent inline">
                     Layer 2s
                   </div>
                 </h2>
               </div>
 
               <div className="animate-normal">
-                <p className="font-inter pr-5 text-p12 leading-[19px] text-gray-200 md:text-[18px] md:leading-[26px] mt-[10px] md:mt-6">
+                <p className="font-inter pr-3 text-[12px] leading-[18px] text-gray-200 md:text-[18px] md:leading-[26px] mt-[8px] md:mt-6">
                   For the upcoming cycle, streamlining the user experience is
                   paramount for the next wave of adoption. Eclipse Fi is working
                   with partners to radically transform the cross-chain user
                   experience, leveraging account abstraction to create an
-                  intuitive “onboard your grandma” level experience.
+                  intuitive "onboard your grandma" level experience.
                 </p>
-                <p className="font-inter pr-5 text-p12 leading-[19px] text-gray-200 md:text-[18px] md:leading-[26px] mt-[10px] md:mt-6">
+                <p className="font-inter pr-3 text-[12px] leading-[18px] text-gray-200 md:text-[18px] md:leading-[26px] mt-[8px] md:mt-6">
                   Eclipse Fi is committed to deep ecosystem building and has
                   selected to focus on the Cosmos ecosystem with a homebase on
                   Neutron blockchain, as well as emerging layer-2s like Mantle,
@@ -166,37 +82,10 @@ export default function Home() {
 
         <FeaturesTwoSection></FeaturesTwoSection>
 
-        <div className="container w-full mx-auto px-5">
-          <div className="h-[229px] rounded-xl bg-[url('/images/svg-apply-to-launch.svg')] bg-cover bg-center bg-no-repeat px-5 md:h-[370px] md:rounded-[40px]">
-            <div className="flex h-full flex-col items-center justify-center">
-              <div className="mx-auto mb-[6px] max-w-[240px] text-center font-sans text-[20px] font-bold leading-[24px] text-gray-100 md:mb-3 md:max-w-[700px] md:text-[36px] md:leading-[42px]">
-                Are you ready
-                <br /> for your launch on Eclipse FI?
-              </div>
-              <div className="mb-5 max-w-[255px] text-center font-inter text-[11px] leading-[18px] text-gray-200 md:mb-10 md:max-w-[650px] md:text-[18px] md:leading-8">
-                Apply to launch your project and token through the Eclipse Fi
-                protocol or submit an early expression of interest.
-              </div>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://airtable.com/appocm8m9oZWPJv0t/pagBaVi0C6GsDZ6o5/form"
-              >
-                <button
-                  className="flex cursor-pointer items-center justify-center text-gray-100 bg-gradient-to-r from-[#7A5AFB] to-[#1E60EC] rounded-[8.84px] px-[10px] py-[6px] text-sm font-bold leading-[19px] md:rounded-xl md:px-6 md:py-4 md:text-[18px] md:leading-[24px] hover:opacity-90 transition-opacity duration-300"
-                  type="button"
-                >
-                  Apply Now
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
+        <CTAsection></CTAsection>
 
-        <div className="w-full container mx-auto px-5 mt-28">
-          <ScrollingLogos></ScrollingLogos>
-        </div>
-
+        <ScrollingLogos></ScrollingLogos>
+        
         {/* CTA EMAILU <div className="container mx-auto mb-16 mt-[68px] px-5 md:mb-[217px] md:mt-[218px]">
           <div className="h-[200px] rounded-2xl bg-purple-600 px-5 md:h-[370px] md:rounded-[40px] md:px-0">
             <form className="flex h-full flex-col items-center justify-center">
@@ -229,8 +118,6 @@ export default function Home() {
             </form>
           </div>
         </div> */}
-
-
       </main>
 
       <footer className="bg-white dark:bg-gray-900 w-full">
@@ -291,17 +178,6 @@ export default function Home() {
             </div>
 
             <div className="col-span-1 flex flex-col gap-6">
-              <a title="Click to view projects" href="/launchpad">
-                <button
-                  className="border-gradient-l-purple-blue-purple gradient-border-2 box-border items-center text-gray-100 
-          flex cursor-pointer mt-7 rounded-[7.2px] px-[14.4px] py-[9px] text-sm font-bold leading-4 
-          md:mt-0 md:rounded-xl md:px-6 md:py-[15px] md:text-base md:leading-[19px]"
-                >
-                  View Projects
-                </button>
-              </a>
-
-
               <div className="flex items-center gap-2 font-inter text-sm leading-5 text-[#A5AED5]">
                 $ECLIP Arbitrum
                 <button

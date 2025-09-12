@@ -1,22 +1,21 @@
-"use client"; // For client-side rendering in Next.js
+"use client";
 
 import React, { useState, useEffect } from "react";
 
 export default function HeroSection() {
   const [rotation, setRotation] = useState(0);
 
-  // Handle scroll event to update rotation
+
   const handleScroll = () => {
-    const scrollY = window.scrollY; // Get current scroll position
-    const rotateValue = scrollY * 0.1; // Rotate based on scroll
+    const scrollY = window.scrollY; 
+    const rotateValue = scrollY * 0.1;
     setRotation(rotateValue);
   };
 
   useEffect(() => {
-    // Add scroll event listener
+
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup scroll event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -24,14 +23,14 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative mt-[-86px] flex h-screen w-full items-center justify-center overflow-hidden bg-[url('/images/svg-circle.svg')] bg-cover bg-center bg-no-repeat sm:mt-0 md:mt-[-150px] md:h-screen md:bg-[url('/images/svg-circle.svg')]"
+      className="relative mt-[-86px] flex h-screen w-full items-center justify-center overflow-hidden bg-[url('/images/svg-circle.svg')] bg-cover bg-center bg-no-repeat sm:mt-16 md:mt-[-150px] md:h-[120vh] md:bg-[url('/images/svg-circle.svg')]"
     >
       {/* Smaller SVG */}
       <div
         className="absolute left-0 top-0 w-full h-full bg-center bg-no-repeat invisible md:visible"
         style={{
           backgroundImage: "url('/images/svg-hero-circle-xs.svg')",
-          transform: `translate(0px, -7%) rotate(${rotation}deg)`, // Apply dynamic rotation
+          transform: `translate(0px, -7%) rotate(${rotation}deg)`,
         }}
       />
 
@@ -40,7 +39,7 @@ export default function HeroSection() {
         className="absolute left-0 top-0 w-full h-[120%] bg-center bg-no-repeat invisible md:visible"
         style={{
           backgroundImage: "url('/images/svg-hero-circle-sm.svg')",
-          transform: `translate(0px, -7%) rotate(${rotation}deg)`, // Apply dynamic rotation
+          transform: `translate(0px, -7%) rotate(${rotation}deg)`,
         }}
       />
 

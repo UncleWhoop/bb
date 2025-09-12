@@ -51,34 +51,45 @@ const features = [
 
 export default function FeaturesTwoSection() {
   return (
-    <section className="mb-[40px] w-full h-full overflow-x-clip pt-40 md:mb-[120px]">
-      <div className="container mx-auto flex flex-col items-start justify-between md:flex-row md:items-center">
-        <div className="w-[36%]">
-          <div className="flex flex-col justify-center">
-            <h3 className="text-[22px] font-normal leading-[27px] text-purple-400 md:text-[28px] md:leading-[36px]">
-              Empowering the Future:
-            </h3>
-            <h2 className="text-[32px] font-bold leading-[37px] text-gray-100 md:text-[48px] md:leading-[64px]">
-              Tools for a Decentralised Revolution
-            </h2>
-          </div>
-        </div>
-
-        <div className="flex w-full max-w-[620px] flex-col gap-16 md:grid md:grid-cols-2 md:grid-rows-2 md:bg-[url('/images/svg-cross.svg')] md:bg-center md:bg-no-repeat">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="border-b border-[#98B9FF4D] pb-14 pt-8 md:border-none md:py-0 md:pr-7"
-            >
-              {feature.svg}
-              <div className="mt-6 text-[20px] font-bold leading-[23px] text-gray-100">
-                {feature.title}
-              </div>
-              <p className="font-inter mt-3 max-w-[290px] text-sm leading-5 text-gray-200">
-                {feature.description}
-              </p>
+    <section className="mb-10 w-full h-full overflow-x-clip pt-20 px-4 sm:px-6 lg:px-8 md:mb-[120px] md:pt-40">
+      <div className="container mx-auto">
+        <div className="flex flex-col space-y-8 lg:flex-row lg:items-center lg:justify-between lg:space-y-0">
+          <div className="w-full lg:w-[36%]">
+            <div className="flex flex-col justify-center space-y-2">
+              <h3 className="text-lg font-normal leading-6 text-purple-400 sm:text-xl sm:leading-7 md:text-[28px] md:leading-[36px]">
+                Empowering the Future:
+              </h3>
+              <h2 className="text-2xl font-bold leading-7 text-gray-100 sm:text-3xl sm:leading-8 md:text-[48px] md:leading-[64px]">
+                Tools for a Decentralised Revolution
+              </h2>
             </div>
-          ))}
+          </div>
+
+          <div className="w-full max-w-none lg:max-w-[620px]">
+            <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 md:gap-8 lg:bg-[url('/images/svg-cross.svg')] lg:bg-center lg:bg-no-repeat">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="border-b border-[#98B9FF4D] pb-6 pt-4 last:border-b-0 md:border-none md:py-0 md:pr-7"
+                >
+                  {/* Icon */}
+                  <div className="mb-4">
+                    {feature.svg}
+                  </div>
+                  
+                  {/* Title */}
+                  <div className="mb-3 text-lg font-bold leading-6 text-gray-100 sm:text-xl sm:leading-7">
+                    {feature.title}
+                  </div>
+                  
+                  {/* Description */}
+                  <p className="font-inter text-sm leading-5 text-gray-200 sm:text-base sm:leading-6">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
