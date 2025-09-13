@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import AnimatedDiv from "./AnimatedDiv";
 
 export default function HeroSection() {
   const [rotation, setRotation] = useState(0);
@@ -27,7 +28,7 @@ export default function HeroSection() {
     >
       {/* Smaller SVG */}
       <div
-        className="absolute left-0 top-0 w-full h-full bg-center bg-no-repeat invisible md:visible"
+        className="absolute left-0 top-[80px] w-full h-full bg-center bg-no-repeat invisible md:visible"
         style={{
           backgroundImage: "url('/images/svg-hero-circle-xs.svg')",
           transform: `translate(0px, -7%) rotate(${rotation}deg)`,
@@ -43,7 +44,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="z-10 text-center">
+      <AnimatedDiv className="z-10 text-center">
         <h1 className="text-[33px] font-bold leading-[42px] text-gray-100 md:mt-5 md:text-[64px] md:leading-[80px]">
           DeFi <br /> the Status Quo
         </h1>
@@ -86,7 +87,7 @@ export default function HeroSection() {
             </button>
           </a>
         </div>
-      </div>
+      </AnimatedDiv>
 
       <div className="absolute bottom-[-40px] left-0 hidden h-[100px] w-full bg-black blur-[42px] md:block"></div>
     </section>

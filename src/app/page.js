@@ -9,6 +9,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import FeaturesTwoSection from "./components/FeatureTwoSection";
 import Navbar from "./components/NavBar";
 import CTAsection from "./components/CallToAction";
+import AnimatedDiv from "./components/AnimatedDiv";
 
 export default function Home() {
   return (
@@ -39,8 +40,8 @@ export default function Home() {
           `}</style>
 
           <div className="pb-[80px] pl-[20%] pt-[190px] md:py-[450px] md:pl-[40%]">
-            <div className="w-[330px] md:w-[550px]">
-              <div className="animate-normal">
+            <AnimatedDiv className="w-[330px] md:w-[550px]">
+              <div className="">
                 <h3 className="text-[24px] font-medium leading-[24px] text-gray-100 md:text-[34px] md:leading-[58px]">
                   Fostering innovation across
                 </h3>
@@ -56,7 +57,7 @@ export default function Home() {
                 </h2>
               </div>
 
-              <div className="animate-normal">
+              <div className="">
                 <p className="font-inter pr-3 text-[12px] leading-[18px] text-gray-200 md:text-[18px] md:leading-[26px] mt-[8px] md:mt-6">
                   For the upcoming cycle, streamlining the user experience is
                   paramount for the next wave of adoption. Eclipse Fi is working
@@ -72,7 +73,7 @@ export default function Home() {
                   robust foundations and collaborative ecosystem growth.
                 </p>
               </div>
-            </div>
+            </AnimatedDiv>
           </div>
           <div className="absolute left-[-50px] top-[169px] h-[100px] w-[100px] animate-float bg-[url('/images/svg-floating-circle.svg')] bg-contain md:left-[20%] md:top-[350px] md:h-[219px] md:w-[219px]" />
           <div className="absolute top-[350px] h-[44px] w-[44px] animate-float bg-[url('/images/svg-floating-circle-2.svg')] bg-contain bg-no-repeat md:bottom-[450px] md:left-[30%] md:top-[unset] md:h-[98px] md:w-[98px]" />

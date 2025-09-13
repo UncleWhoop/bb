@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedDiv from "./AnimatedDiv";
 
 export default function FeaturesSection() {
   const features = [
@@ -27,29 +28,32 @@ export default function FeaturesSection() {
       <div className="container mx-auto px-4 py-[3rem]">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-8 lg:gap-12">
           <div className="flex-1">
-            <h3 className="text-left text-[20px] font-medium leading-[24px] text-blue-200 sm:text-[22px] sm:leading-[27px] md:text-[28px] md:leading-[36px]">
-              A New Era for
-            </h3>
-            <h2 className="mt-[3px] text-left text-[28px] font-bold leading-[32px] text-gray-100 sm:text-[32px] sm:leading-[37px] md:text-[48px] md:leading-[64px]">
-              Fair and Aligned Token Launches
-            </h2>
+            <AnimatedDiv className="flex flex-col">
+              <h3 className="text-left text-[20px] font-medium leading-[24px] text-blue-200 sm:text-[22px] sm:leading-[27px] md:text-[28px] md:leading-[36px]">
+                A New Era for
+              </h3>
+              <h2 className="mt-[3px] text-left text-[28px] font-bold leading-[32px] text-gray-100 sm:text-[32px] sm:leading-[37px] md:text-[48px] md:leading-[64px]">
+                Fair and Aligned Token Launches
+              </h2>
 
-            <div className="mt-4 md:mt-6">
-              <p className="font-inter text-left text-sm font-normal leading-5 text-gray-200 md:max-w-[812px] md:text-[18px] md:leading-[28px]">
-                Cryptos early promise was clear: to empower innovation and break
-                down access barriers for all—a free, fair, and open financial
-                system. In recent times the industry has shifted to benefit
-                short-term value extraction by a new &quot;elite&quot;.
-              </p>
-              <p className="font-inter mt-3 text-left text-sm font-normal leading-5 text-gray-200 md:mt-6 md:max-w-[812px] md:text-[18px] md:leading-[28px]">
-                Eclipse Fi is reigniting that original vision, pioneering a
-                community-driven launch and DeFi hub that connects passionate
-                builders with dedicated communities.
-              </p>
-            </div>
+              <div className="mt-4 md:mt-6">
+                <p className="font-inter text-left text-sm font-normal leading-5 text-gray-200 md:max-w-[812px] md:text-[18px] md:leading-[28px]">
+                  Cryptos early promise was clear: to empower innovation and break
+                  down access barriers for all—a free, fair, and open financial
+                  system. In recent times the industry has shifted to benefit
+                  short-term value extraction by a new &quot;elite&quot;.
+                </p>
+                <p className="font-inter mt-3 text-left text-sm font-normal leading-5 text-gray-200 md:mt-6 md:max-w-[812px] md:text-[18px] md:leading-[28px]">
+                  Eclipse Fi is reigniting that original vision, pioneering a
+                  community-driven launch and DeFi hub that connects passionate
+                  builders with dedicated communities.
+                </p>
+              </div>
+            </AnimatedDiv>
+            
 
             {/* Feature Icons */}
-            <div className="flex flex-row sm:flex-wrap gap-4 sm:gap-6 pt-6 pb-8 md:pt-8 md:pb-[106px] lg:pb-[168px]">
+            <AnimatedDiv className="flex flex-row sm:flex-wrap gap-4 sm:gap-6 pt-6 pb-8 md:pt-8 md:pb-[106px] lg:pb-[168px]">
               {features.map((f, i) => (
                 <div key={i} className="flex items-center">
                   <div className="flex items-center">
@@ -60,7 +64,7 @@ export default function FeaturesSection() {
                   </div>
                 </div>
               ))}
-            </div>
+            </AnimatedDiv>
           </div>
           
           <div className="flex justify-center lg:justify-end lg:items-center">

@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import bb from "/public/images/era.jpg";
+import AnimatedDiv from "./AnimatedDiv";
 
 export default function ProjectsSection() {
   return (
     <section className="w-full min-h-[80vh] py-[2rem] md:py-[3rem] bg-blue-900">
       <div className="content-wrapper container mx-auto flex flex-col justify-center gap-8 md:gap-12 px-4">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="flex flex-col max-w-[600px]">
+          <AnimatedDiv className="flex flex-col max-w-[600px]">
             <h1 className="text-[20px] text-center md:text-left md:text-[24px] lg:text-[36px] font-bold leading-[24px] md:leading-[26px] lg:leading-[44px] text-gray-100">
               Upcoming projects
             </h1>
@@ -15,7 +16,7 @@ export default function ProjectsSection() {
               Discover our selection of highly vetted live and upcoming
               projects, and participate in the next big launches
             </p>
-          </div>
+          </AnimatedDiv>
           <div className="flex items-center justify-center md:justify-end">
             <div className="border-gradient-l-purple-blue-purple gradient-border-2 flex gap-3 rounded-xl px-4 md:px-6 py-3 md:py-[15px] text-gray-100">
               <a
@@ -45,7 +46,7 @@ export default function ProjectsSection() {
         </div>
 
 
-        <div className="flex flex-col lg:flex-row gap-4 md:gap-5 justify-center">
+        <AnimatedDiv className="flex flex-col lg:flex-row gap-4 md:gap-5 justify-center">
           <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full lg:w-auto">
             {/* Top Image with IDO Badge and Upcoming Tag */}
             <div className="rounded-xl overflow-hidden mb-4 flex flex-col gap-4">
@@ -420,7 +421,7 @@ export default function ProjectsSection() {
               </button>
             </div>
           </div>
-        </div>
+        </AnimatedDiv>
       </div>
     </section>
   );
