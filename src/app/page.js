@@ -131,7 +131,7 @@ export default function Home() {
                   alt="CRUX Logo"
                   width={140}
                   height={40}
-                  className="h-[40px] w-auto"
+                  className="h-[40px] md:h-[60px] w-auto"
                 />
               </Link>
             </div>
