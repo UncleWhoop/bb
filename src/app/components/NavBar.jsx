@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,13 +12,19 @@ export default function Navbar() {
         <div className="container mx-auto flex items-center justify-between pt-[25px]">
           {/* Left: Logo + members */}
           <div className="flex items-center">
-            <Link href="/" title="Click to go home" className="text-white font-bold">
-              LOGO
+            <Link href="/" title="Click to go home" className="">
+              <Image
+                src="/images/logo.png"
+                alt="CRUX Logo"
+                width={140}
+                height={60}
+                className="h-[60px] w-auto"
+              />
             </Link>
 
             <div className="mx-3 h-7 w-[1px] bg-[#443873]" />
 
-            <div className="flex cursor-pointer items-center gap-2 rounded-full bg-[#191644] px-2 py-2">
+            <div className="flex cursor-pointer items-center gap-2 rounded-full bg-[#191644] px-2 py-0.5">
               <div className="flex items-center gap-1.5">
                 <div className="h-6 w-6 rounded-full bg-blue-500" />
                 <div className="-ml-4 h-6 w-6 rounded-full bg-gray-400" />
@@ -61,14 +68,20 @@ export default function Navbar() {
 
       {/* Mobile Navbar */}
       <header className="lg:hidden fixed inset-x-0 top-0 z-50 flex w-full items-center justify-between bg-[#0E0928] px-4 py-3">
-        <Link href="/" title="Click to go home" className="shrink-0 font-bold text-white">
-          LOGO
+        <Link href="/" title="Click to go home" className="shrink-0">
+          <Image
+            src="/images/logo.png"
+            alt="CRUX Logo"
+            width={100}
+            height={32}
+            className="h-[32px] w-auto"
+          />
         </Link>
 
         <div className="flex items-center gap-2">
           <button
             title="Connect Wallet"
-            className="inline-flex h-12 items-center gap-2 rounded-3xl border border-purple-500 bg-black/40 px-4 font-bold text-sm text-white transition-colors hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 active:text-transparent active:bg-clip-text"
+            className="inline-flex h-12 items-center gap-2 rounded-3xl border border-purple-500 bg-black/40 px-3 font-bold text-sm text-white transition-colors hover:bg-gradient-to-r hover:from-purple-500 hover:to-indigo-500 active:text-transparent active:bg-clip-text"
           >
             Connect Wallet
           </button>

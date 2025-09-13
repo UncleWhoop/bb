@@ -53,7 +53,7 @@ export default function FeaturesSection() {
             
 
             {/* Feature Icons */}
-            <AnimatedDiv className="flex flex-row sm:flex-wrap gap-4 sm:gap-6 pt-6 pb-8 md:pt-8 md:pb-[106px] lg:pb-[168px]">
+            <div className="flex flex-col md:flex-row sm:flex-wrap gap-4 sm:gap-6 pt-6 pb-8 md:pt-8 md:pb-[106px] lg:pb-[168px]">
               {features.map((f, i) => (
                 <div key={i} className="flex items-center">
                   <div className="flex items-center">
@@ -64,7 +64,7 @@ export default function FeaturesSection() {
                   </div>
                 </div>
               ))}
-            </AnimatedDiv>
+            </div>
           </div>
           
           <div className="flex justify-center lg:justify-end lg:items-center">

@@ -1,11 +1,11 @@
 import React from "react";
-import AnimatedDiv from "./AnimatedDiv";
+
 
 export default function CTAsection() {
   return (
     <section className="container w-full mx-auto px-5">
       <div className="h-[229px] rounded-xl bg-[url('/images/svg-apply-to-launch.svg')] bg-cover bg-center bg-no-repeat px-5 md:h-[370px] md:rounded-[40px]">
-        <AnimatedDiv className="flex h-full flex-col items-center justify-center">
+        <div className="flex h-full flex-col items-center justify-center">
           <div className="mx-auto mb-[6px] max-w-[240px] text-center font-sans text-[16px] font-bold leading-[24px] text-gray-100 md:mb-3 md:max-w-[700px] md:text-[36px] md:leading-[42px]">
             Are you ready
             <br /> for your launch on Eclipse FI?
@@ -26,7 +26,7 @@ export default function CTAsection() {
               Apply Now
             </button>
           </a>
-        </AnimatedDiv>
+        </div>
       </div>
     </section>
   );

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import AnimatedDiv from "./AnimatedDiv";
 
+
 export default function HeroSection() {
   const [rotation, setRotation] = useState(0);
 

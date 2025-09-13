@@ -141,31 +141,28 @@ export default function FeaturesTwoSection() {
           </div>
 
           <div className="w-full max-w-none lg:max-w-[620px]">
-  <AnimatedDiv className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 md:gap-8 lg:bg-[url('/images/svg-cross.svg')] lg:bg-center lg:bg-no-repeat">
-    {features.map((feature, index) => (
-      <div
-        key={index}
-        className="min-h-[350px] flex flex-col border-b border-[#98B9FF4D] pb-6 pt-4 last:border-b-0 md:border-none md:py-0"
-      >
-        {/* Icon */}
-        <div className="mb-4">
-          {feature.svg}
-        </div>
+            <AnimatedDiv className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 md:gap-8 lg:bg-[url('/images/svg-cross.svg')] lg:bg-center lg:bg-no-repeat">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="min-h-[350px] flex flex-col border-b border-[#98B9FF4D] pb-6 pt-4 last:border-b-0 md:border-none md:py-0"
+                >
+                  {/* Icon */}
+                  <div className="mb-4">{feature.svg}</div>
 
-        {/* Title */}
-        <div className="mb-3 text-lg font-bold leading-6 text-gray-100 sm:text-xl sm:leading-7">
-          {feature.title}
-        </div>
+                  {/* Title */}
+                  <div className="mb-3 text-lg font-bold leading-6 text-gray-100 sm:text-xl sm:leading-7">
+                    {feature.title}
+                  </div>
 
-        {/* Description */}
-        <p className="font-inter text-sm leading-5 text-gray-200 sm:text-base sm:leading-6">
-          {feature.description}
-        </p>
-      </div>
-    ))}
-  </AnimatedDiv>
-</div>
-
+                  {/* Description */}
+                  <p className="font-inter text-sm leading-5 text-gray-200 sm:text-base sm:leading-6">
+                    {feature.description}
+                  </p>
+                </div>
+              ))}
+            </AnimatedDiv>
+          </div>
         </div>
       </div>
     </section>

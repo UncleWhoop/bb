@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import ScrollingLogos from "./components/ScrollingLogos";
 import FeaturesSection from "./components/FeatureSection";
@@ -40,16 +41,16 @@ export default function Home() {
           `}</style>
 
           <div className="pb-[80px] pl-[20%] pt-[190px] md:py-[450px] md:pl-[40%]">
-            <AnimatedDiv className="w-[330px] md:w-[550px]">
+            <AnimatedDiv className="w-[300px] md:w-[550px]">
               <div className="">
-                <h3 className="text-[24px] font-medium leading-[24px] text-gray-100 md:text-[34px] md:leading-[58px]">
+                <h3 className="text-[22px] font-medium leading-[24px] text-gray-100 md:text-[34px] md:leading-[58px]">
                   Fostering innovation across
                 </h3>
-                <h2 className="mb-[6px] text-[26px] font-bold leading-[28px] text-gray-100 md:mb-[26px] md:text-[72px] md:leading-[76px]">
+                <h2 className="mb-[6px] text-[22px] font-bold leading-[28px] text-gray-100 md:mb-[26px] md:text-[72px] md:leading-[76px]">
                   <div className="bg-[linear-gradient(to_right,#930606_-5.86%,#b18779_20.49%,#906bf5_46.84%,#da8461_73.19%,#c34ddc_99.55%)] bg-clip-text text-transparent inline">
                     Cosmos
                   </div>
-                  <span> and</span>
+                  <span className="font-medium"> and</span>
                   <br className="hidden md:block" />
                   <div className="pl-2 md:pl-0 bg-[linear-gradient(to_right,#930606_-5.86%,#b18779_20.49%,#906bf5_46.84%,#da8461_73.19%,#c34ddc_99.55%)] bg-clip-text text-transparent inline">
                     Layer 2s
@@ -85,7 +86,7 @@ export default function Home() {
         <CTAsection></CTAsection>
 
         <ScrollingLogos></ScrollingLogos>
-        
+
         {/* CTA EMAILU <div className="container mx-auto mb-16 mt-[68px] px-5 md:mb-[217px] md:mt-[218px]">
           <div className="h-[200px] rounded-2xl bg-purple-600 px-5 md:h-[370px] md:rounded-[40px] md:px-0">
             <form className="flex h-full flex-col items-center justify-center">
@@ -124,18 +125,15 @@ export default function Home() {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
+              <Link href="/" title="Click to go home" className="">
                 <Image
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  alt="FlowBite Logo"
-                  className="h-8 me-3"
-                  width={32}
-                  height={32}
+                  src="/images/logo.png"
+                  alt="CRUX Logo"
+                  width={140}
+                  height={60}
+                  className="h-[60px] w-auto"
                 />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                  Flowbite
-                </span>
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
@@ -144,8 +142,11 @@ export default function Home() {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
-                      Flowbite
+                    <a
+                      href="https://tailwindcss.com/"
+                      className="hover:underline"
+                    >
+                      Tailwind CSS
                     </a>
                   </li>
                   <li>
@@ -265,8 +266,6 @@ export default function Home() {
                   </svg>
                 </button>
               </div>
-
-              <a>Audit</a>
             </div>
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
