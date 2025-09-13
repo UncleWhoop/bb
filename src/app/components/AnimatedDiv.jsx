@@ -3,17 +3,17 @@ import { motion } from "framer-motion";
 const AnimatedDiv = ({ className = "", children }) => {
   return (
     <motion.div
-      
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }} // Parent fades in when 60% visible
-      viewport={{ once: true, amount: 0.6 }} // Trigger animation when 60% of the parent is visible
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* Children are animated one by one with stagger */}
+
       <motion.div
         className={className}
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }} 
         variants={{
           hidden: { opacity: 0 },
           visible: {

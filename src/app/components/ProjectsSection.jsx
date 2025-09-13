@@ -45,9 +45,9 @@ export default function ProjectsSection() {
           </div>
         </AnimatedDiv>
 
-        <AnimatedDiv className="flex flex-col lg:flex-row gap-4 md:gap-5 justify-between w-full">
-          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full flex-1">
-            {/* Top Image with IDO Badge and Upcoming Tag */}
+        <AnimatedDiv className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5 w-full">
+          {/* Card 1 */}
+          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full">
             <div className="rounded-xl overflow-hidden w-full mb-4 flex flex-col gap-4">
               <Image
                 src={bb}
@@ -57,7 +57,6 @@ export default function ProjectsSection() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
                 className="object-cover h-[180px] md:h-[200px] w-full"
               />
-
               <div className="flex flex-row gap-2 items-center">
                 <Image
                   src={bb}
@@ -67,27 +66,20 @@ export default function ProjectsSection() {
                   sizes="40px"
                   className="object-cover rounded-lg"
                 />
-
-                {/* IDO Badge */}
                 <button className="bg-[#3B2DF4] text-xs font-bold text-white px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   IDO
                 </button>
-                {/* Upcoming Tag */}
                 <button className="bg-[#FBBF24] text-xs font-semibold text-black px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   Upcoming
                 </button>
               </div>
             </div>
-
-            {/* Project Title & Description */}
             <div className="mt-4 flex flex-col gap-1">
               <h3 className="text-base md:text-lg font-bold">Kii Chain</h3>
               <p className="text-xs md:text-sm text-gray-300">
                 The Blockchain for emerging markets...
               </p>
             </div>
-
-            {/* Raise & Application Info */}
             <div className="mt-4 flex justify-between items-center bg-[#29285B] rounded-xl p-3 md:p-4 text-xs md:text-sm">
               <div className="flex flex-col">
                 <span className="text-gray-400">Raise</span>
@@ -100,8 +92,6 @@ export default function ProjectsSection() {
                 <span className="font-bold text-white">TBA</span>
               </div>
             </div>
-
-            {/* Project Details Button */}
             <div className="mt-4">
               <button className="w-full flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 py-2 md:py-3 font-bold text-white transition duration-300 hover:opacity-90 text-sm md:text-base">
                 <svg
@@ -121,8 +111,8 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full flex-1">
-            {/* Top Image with IDO Badge and Upcoming Tag */}
+          {/* Card 2 */}
+          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full">
             <div className="rounded-xl overflow-hidden w-full mb-4 flex flex-col gap-4">
               <Image
                 src={bb}
@@ -132,7 +122,6 @@ export default function ProjectsSection() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
                 className="object-cover h-[180px] md:h-[200px] w-full"
               />
-
               <div className="flex flex-row gap-2 items-center">
                 <Image
                   src={bb}
@@ -142,27 +131,20 @@ export default function ProjectsSection() {
                   sizes="40px"
                   className="object-cover rounded-lg"
                 />
-
-                {/* IDO Badge */}
                 <button className="bg-[#3B2DF4] text-xs font-bold text-white px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   IDO
                 </button>
-                {/* Upcoming Tag */}
                 <button className="bg-[#FBBF24] text-xs font-semibold text-black px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   Upcoming
                 </button>
               </div>
             </div>
-
-            {/* Project Title & Description */}
             <div className="mt-4 flex flex-col gap-1">
               <h3 className="text-base md:text-lg font-bold">Kii Chain</h3>
               <p className="text-xs md:text-sm text-gray-300">
                 The Blockchain for emerging markets...
               </p>
             </div>
-
-            {/* Raise & Application Info */}
             <div className="mt-4 flex justify-between items-center bg-[#29285B] rounded-xl p-3 md:p-4 text-xs md:text-sm">
               <div className="flex flex-col">
                 <span className="text-gray-400">Raise</span>
@@ -175,8 +157,6 @@ export default function ProjectsSection() {
                 <span className="font-bold text-white">TBA</span>
               </div>
             </div>
-
-            {/* Project Details Button */}
             <div className="mt-4">
               <button className="w-full flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 py-2 md:py-3 font-bold text-white transition duration-300 hover:opacity-90 text-sm md:text-base">
                 <svg
@@ -196,8 +176,8 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full flex-1">
-            {/* Top Image with IDO Badge and Upcoming Tag */}
+          {/* Card 3 */}
+          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full">
             <div className="rounded-xl overflow-hidden w-full mb-4 flex flex-col gap-4">
               <Image
                 src={bb}
@@ -207,7 +187,6 @@ export default function ProjectsSection() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
                 className="object-cover h-[180px] md:h-[200px] w-full"
               />
-
               <div className="flex flex-row gap-2 items-center">
                 <Image
                   src={bb}
@@ -217,27 +196,20 @@ export default function ProjectsSection() {
                   sizes="40px"
                   className="object-cover rounded-lg"
                 />
-
-                {/* IDO Badge */}
                 <button className="bg-[#3B2DF4] text-xs font-bold text-white px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   IDO
                 </button>
-                {/* Upcoming Tag */}
                 <button className="bg-[#FBBF24] text-xs font-semibold text-black px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   Upcoming
                 </button>
               </div>
             </div>
-
-            {/* Project Title & Description */}
             <div className="mt-4 flex flex-col gap-1">
               <h3 className="text-base md:text-lg font-bold">Kii Chain</h3>
               <p className="text-xs md:text-sm text-gray-300">
                 The Blockchain for emerging markets...
               </p>
             </div>
-
-            {/* Raise & Application Info */}
             <div className="mt-4 flex justify-between items-center bg-[#29285B] rounded-xl p-3 md:p-4 text-xs md:text-sm">
               <div className="flex flex-col">
                 <span className="text-gray-400">Raise</span>
@@ -250,8 +222,6 @@ export default function ProjectsSection() {
                 <span className="font-bold text-white">TBA</span>
               </div>
             </div>
-
-            {/* Project Details Button */}
             <div className="mt-4">
               <button className="w-full flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 py-2 md:py-3 font-bold text-white transition duration-300 hover:opacity-90 text-sm md:text-base">
                 <svg
@@ -271,8 +241,8 @@ export default function ProjectsSection() {
             </div>
           </div>
 
-          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full flex-1">
-            {/* Top Image with IDO Badge and Upcoming Tag */}
+          {/* Card 4 */}
+          <div className="rounded-2xl bg-[#1C1B3A] p-3 md:p-4 shadow-xl text-white font-inter h-full w-full">
             <div className="rounded-xl overflow-hidden w-full mb-4 flex flex-col gap-4">
               <Image
                 src={bb}
@@ -282,7 +252,6 @@ export default function ProjectsSection() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 400px"
                 className="object-cover h-[180px] md:h-[200px] w-full"
               />
-
               <div className="flex flex-row gap-2 items-center">
                 <Image
                   src={bb}
@@ -292,27 +261,20 @@ export default function ProjectsSection() {
                   sizes="40px"
                   className="object-cover rounded-lg"
                 />
-
-                {/* IDO Badge */}
                 <button className="bg-[#3B2DF4] text-xs font-bold text-white px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   IDO
                 </button>
-                {/* Upcoming Tag */}
                 <button className="bg-[#FBBF24] text-xs font-semibold text-black px-2 md:px-[0.75rem] py-1 md:py-[0.5rem] rounded-md">
                   Upcoming
                 </button>
               </div>
             </div>
-
-            {/* Project Title & Description */}
             <div className="mt-4 flex flex-col gap-1">
               <h3 className="text-base md:text-lg font-bold">Kii Chain</h3>
               <p className="text-xs md:text-sm text-gray-300">
                 The Blockchain for emerging markets...
               </p>
             </div>
-
-            {/* Raise & Application Info */}
             <div className="mt-4 flex justify-between items-center bg-[#29285B] rounded-xl p-3 md:p-4 text-xs md:text-sm">
               <div className="flex flex-col">
                 <span className="text-gray-400">Raise</span>
@@ -325,8 +287,6 @@ export default function ProjectsSection() {
                 <span className="font-bold text-white">TBA</span>
               </div>
             </div>
-
-            {/* Project Details Button */}
             <div className="mt-4">
               <button className="w-full flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 py-2 md:py-3 font-bold text-white transition duration-300 hover:opacity-90 text-sm md:text-base">
                 <svg
@@ -345,7 +305,6 @@ export default function ProjectsSection() {
               </button>
             </div>
           </div>
-
         </AnimatedDiv>
       </div>
     </section>
