@@ -130,8 +130,8 @@ export default function Home() {
                   src="/images/logo.png"
                   alt="CRUX Logo"
                   width={140}
-                  height={60}
-                  className="h-[60px] w-auto"
+                  height={40}
+                  className="h-[40px] w-auto"
                 />
               </Link>
             </div>
@@ -178,7 +178,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="col-span-1 flex flex-col gap-6">
+            <div className="col-span-1 flex flex-col gap-4">
               <div className="flex items-center gap-2 font-inter text-sm leading-5 text-[#A5AED5]">
                 $ECLIP Arbitrum
                 <button
@@ -267,6 +267,8 @@ export default function Home() {
                 </button>
               </div>
             </div>
+
+
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-between">
